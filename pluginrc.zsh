@@ -22,7 +22,23 @@ else
   if [[ $XXH_VERBOSE == '2' ]]; then
     echo $plugin_name: Set default plugins=git
   fi
-  export plugins=(git)
+  export plugins=(
+    git
+    aliases
+    common-aliases
+    autojump
+    autoenv
+    colorize
+    command-not-found
+    colored-man-pages
+    docker
+    systemd
+    docker
+    docker-compose
+    tmux
+    ansible
+    colorize
+  )
 fi
 
 export DISABLE_AUTO_UPDATE=true
